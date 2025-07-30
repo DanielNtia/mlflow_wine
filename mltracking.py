@@ -77,4 +77,5 @@ if __name__ == "__main__":
         signature = infer_signature(train_x, lr.predict(train_x))
 
         # Log model without registering
-        mlflow.sklearn.log_model(sk_model=lr, name="model", signature=signature)
+        mlflow.sklearn.log_model(sk_model=lr, artifact_path="model", signature=signature)
+
