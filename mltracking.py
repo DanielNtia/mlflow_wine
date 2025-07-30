@@ -72,7 +72,7 @@ def main():
         mlflow.log_metric("r2", r2)
 
         # Save model
-        mlflow.sklearn.log_model(sk_model=lr, artifact_path="model")
+        mlflow.sklearn.log_model(sk_model=lr, name="model")
 
 if __name__ == "__main__":
     main()
